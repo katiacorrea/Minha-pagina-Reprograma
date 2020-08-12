@@ -1,0 +1,165 @@
+/*Geral*/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*Fontes*/
+p {
+    font-size: 15px;
+}
+
+.banner__titulo {
+    font-size: 4rem;
+}
+.banner__subtitulo {
+    font-size: 2rem;
+}
+a {
+    text-decoration: none;
+}
+
+.sobre__titulo {
+    font-size: 4rem;
+    color: #c4c4c4;
+}
+
+/*Layout*/
+
+/*Botão*/
+
+.btn {
+    background-color: white;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    font-weight: 700;
+    color: #d604c5;
+    border: solid 1px #6e0265;
+}
+.btn:hover {
+    background-color: #d604c5;
+    color: white;
+}
+
+/*Banner*/
+
+.banner {
+    background-image: url(../imagens/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    text-align: center;
+    padding-top: 20rem;
+    color: white;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/*Sobre*/
+
+.sobre-pai {
+    display: flex;
+    justify-content: space-between;
+}
+.sobre__filho-descricao, .sobre__filho-habilidades {
+    width: 40%;
+    line-height: 1.5;
+}
+
+.sobre__filho-descricao__destaque, .sobre__filho-habilidades__titulo {
+    font-size: 2rem;   
+}
+.sobre__filho-habilidades__lista {
+    padding-left: 2rem;
+    line-height: 2;
+    font-size: 1.5rem;
+}
+.sobre__filho-descricao__regular {
+    margin-bottom: 30px;
+}
+
+/*Redes Sociais*/
+.redes-sociais {
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 0;
+}
+
+.redes-sociais__link {
+    background-color: #d604c5;
+    width: 20%;
+    padding: 2rem 0;
+    margin: 0 1rem;
+    text-align: center;
+    color: white;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+.rodape__texto {
+    font-style: initial;
+}
+
+/*Media Query*/
+/*Tablet*/
+@media (max-width: 1024px) {
+    html {
+        font-size: 8px;
+    }
+    .container {
+        max-width: 960px;
+        padding: 4rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .sobre__titulo {
+        text-align: center;
+    }
+    .sobre-pai {
+        flex-direction: column;
+    }
+    .sobre__filho-descricao, 
+    .sobre__filho-habilidades {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .sobre__filho-habilidades__lista {
+        font-size: 1.8rem;
+    }
+    .redes-sociais {
+        flex-direction: column;
+        align-items: center;
+        
+        margin: -35px 0;
+        padding: 0;
+    }
+    .redes-sociais__link {
+        width: 50%;
+        margin: 1rem 0;
+    }
+    .rodape {
+        margin-top: 30px;
+    }
+}
+
+
+
+
